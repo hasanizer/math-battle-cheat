@@ -1,4 +1,4 @@
-var target = 999
+var target
 var intervalId
 
 function play(trgt, interval){
@@ -44,4 +44,4 @@ function answer(){
 		}
 	}
 }
-play(200, 1)
+play(999, 1)
