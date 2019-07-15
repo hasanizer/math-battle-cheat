@@ -6,8 +6,7 @@ How to use:
 2) Right click
 3) Inspect
 4) Open tab console
-5) Click play on the game
-6) Input the script
-7) Enter
+5) Input the script
+6) Enter
 
 You can change the target variable as you wish ;)
