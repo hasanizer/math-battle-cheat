@@ -1,10 +1,10 @@
-
-var target = 200
+var target = 999
 var intervalId
 
-function play(interval){
+function play(trgt, interval){
 	document.getElementById('button_correct').click()
 	intervalId = setInterval(job, interval)
+	target = trgt
 	console.log("start = "+intervalId)
 }
 
@@ -28,13 +28,9 @@ function answer(){
 		var operator = document.getElementById('task_op').innerText
 		if(operator=='×'){
 			operator='*'
-		} else if(operator =='+'){
-			operator='+'
-		} else if(operator == '/'){
-			operator ='/'
-		} else {
-			operator ='-'
-		}  
+		} else if(operator =='–'){
+			operator='-'
+		} 
 
 		var y=document.getElementById('task_y').innerHTML
 		var result = document.getElementById('task_res').innerHTML
@@ -48,4 +44,4 @@ function answer(){
 		}
 	}
 }
-play(50)
+play(200, 1)
